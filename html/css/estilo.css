@@ -1,3 +1,54 @@
 .teste{
     background-color: #2aabd2;
 }
+
+
+
+@media (min-width: 992px) {
+    .col-md-2-5 {
+        float: left;
+    }
+}
+.col-md-2-5{
+    width: 22%;
+}
+
+
+
+.lista-titulo{
+    padding-top: 5px;
+    font-weight: bold;
+    color: #888888;
+    margin-left: 38px;
+    position: absolute;
+}
+
+.lista-categorias > li{
+    margin-left: 38px;
+    color: #989898;
+}
+
+
+.icones{
+    background: url('../img/icones.png') no-repeat;
+    background-size: 531px;
+    width: 33px;
+    height: 33px;
+}
+
+
+.icones-restaurantes{
+    background-position: 0 0;
+}
+
+.icones-locais{
+    background-position: -34px 0;
+}
+
+.icones-beleza{
+    background-position: -68px 0;
+}
+
+.icones-lojas{
+    background-position: -102px 0;
+}
