@@ -1,8 +1,74 @@
-.teste{
-    background-color: #2aabd2;
+.logo{
+    height: 150px;
+}
+
+.area-pesquisa{
+    min-height: 100px;
+    min-width: 100%;
+    background-color: #00aeff;
+}
+
+.campos-de-pesquisa{
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.pesquisa{
+
+}
+
+.input-pesquisa{
+    height: 55px;
+    width: 97%;
+    border: none;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 30px;
+}
+
+.pesquisa > form > input[type=submit]{
+    border: none;
+    background: none;
+    background: url("../img/icone-pesquisa.png") no-repeat;
+    margin-top: 5px;
+    margin-left: -55px;
+    width: 46px;
+    height: 45px;
+    position: absolute;
+
+}
+
+.area-alfabeto{
+    min-height: 41px;
+    width: 100%;
+    background-color: #0ca7ef;
+}
+
+.alfabeto{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.alfabeto li{
+    padding-left: 8px;
+}
+
+.alfabeto a:link,
+.alfabeto a:hover,
+.alfabeto a:active,
+.alfabeto a:visited{
+    color: #fff;
 }
 
 
+.busca-rapida{
+
+}
+
+.categoria{
+
+}
 
 @media (min-width: 992px) {
     .col-md-2-5 {
@@ -51,4 +117,37 @@
 
 .icones-lojas{
     background-position: -102px 0;
+}
+
+.icones-servicos{
+    background-position: -137px 0;
+}
+
+.icones-saude{
+    background-position: -171px 0;
+}
+
+.icones-hoteis{
+    background-position: -206px 0;
+}
+
+.icones-automoveis{
+    background-position: -240px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .categoria{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        color: #fff;
+    }
+
+    .categoria-restaurante{
+            background-color: #d0e9c6;
+    }
+
+    .categoria-locais{
+        background-color: #faebcc;
+    }
 }
