@@ -74,7 +74,7 @@ body{
 }
 
 .alfabeto li{
-    padding-left: 0.45em;
+    padding-left: 0.4em;
 }
 
 .alfabeto a:link,
@@ -166,10 +166,48 @@ body{
     background-position: -240px 0;
 }
 
+.icones-educacao{
+    background-position: -274px 0;
+}
+
+.icones-informatica{
+    background-position: -308px 0;
+}
+
+.icones-publico{
+    background-position: -342px 0;
+}
+
+.icones-outros{
+    background-position: -376px 0;
+}
+
+
+.novo-contato{
+    width: 100%;
+    background-color: #00aeff;
+}
+
+.novo{
+    color: #fff;
+    font-size: 1.71em;
+    text-decoration: underline;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     body{
         font-size:12px;
     }
+
+    hr{
+        display: none;
+    }
+
     .logo{
         width: 50%;
         padding-top: 10%;
@@ -182,20 +220,82 @@ body{
         padding-left: 30px;
         color: #080808;
         font-size: 1.3em;
+        border-left: solid 0.34em;
     }
 
     .lista-categorias{
         width: 400%;
     }
 
+    .lista-categorias li{
+        padding-top: 0.3em;
+    }
+
     .categoria-restaurante,
     .categoria-beleza,
-    .categoria-{
+    .categoria-servicos,
+    .categoria-hoteis,
+    .categoria-educacao,
+    .categoria-publico{
         background-color: #f5f5f5;
     }
 
-    .categoria-locais{
+    .categoria-locais,
+    .categoria-lojas,
+    .categoria-saude,
+    .categoria-automoveis,
+    .categoria-informatica,
+    .categoria-outros{
         background-color: #fff;
     }
+
+    .categoria-restaurante{
+        border-color: #33a7d8;
+    }
+
+    .categoria-locais{
+        border-color: #a3fd39;
+    }
+
+    .categoria-beleza{
+        border-color: #fff533;
+    }
+
+    .categoria-lojas{
+        border-color: #f9a54b;
+    }
+
+    .categoria-servicos{
+        border-color: #f04950;
+    }
+
+    .categoria-saude{
+        border-color: #e966ac;
+    }
+
+    .categoria-hoteis{
+        border-color: #b868ad;
+    }
+
+    .categoria-automoveis{
+        border-color: #8869ad;
+    }
+
+    .categoria-educacao{
+        border-color: #3276b5;
+    }
+
+    .categoria-informatica{
+        border-color: #00a88f;
+    }
+
+    .categoria-publico{
+        border-color: #f37020;
+    }
+
+    .categoria-outros{
+        border-color: #6b439b;
+    }
+
 
 }
