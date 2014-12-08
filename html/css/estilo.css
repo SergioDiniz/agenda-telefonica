@@ -1,7 +1,17 @@
 /*
 pagina = 970px
 
+
 */
+
+.hidden-md{
+    display: none;
+}
+
+.hidden-lg{
+    display: none;
+}
+
 html{
     font-family: Arial, sans-serif;
 }
@@ -89,8 +99,11 @@ body{
 
 }
 
-.categoria{
-
+.categoria a:link,
+.categoria a:visited,
+.categoria a:hover,
+.categoria a:active{
+    color: #989898;
 }
 
 @media (min-width: 992px) {
@@ -188,12 +201,19 @@ body{
     background-color: #00aeff;
 }
 
-.novo{
+.novo {
     color: #fff;
     font-size: 1.71em;
     text-decoration: underline;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+.novo a:link,
+.novo a:active,
+.novo a:hover,
+.novo a:visited{
+    color: #fff;
 }
 
 
@@ -210,9 +230,75 @@ body{
     border-left: solid 0.4em;
 }
 
-.pesquisa-categoria{
+.erro-cadastro{
+    color: #ac2925;
+}
+
+.alert-danger{
+    background-image: none;
+}
+
+.paginacao{
+    margin-top: 3%;
+    text-align: center;
+}
+
+
+
+.pesquisa-categoria-restaurante{
     border-color: #33a7d8;
 }
+
+.pesquisa-categoria-locais{
+    border-color: #a3fd39;
+}
+
+.pesquisa-categoria-beleza{
+    border-color: #fff533;
+}
+
+.pesquisa-categoria-lojas{
+    border-color: #f9a54b;
+}
+
+.pesquisa-categoria-servicos{
+    border-color: #f04950;
+}
+
+.pesquisa-categoria-saude{
+    border-color: #e966ac;
+}
+
+.pesquisa-categoria-hoteis{
+    border-color: #b868ad;
+}
+
+.pesquisa-categoria-automoveis{
+    border-color: #8869ad;
+}
+
+.pesquisa-categoria-educacao{
+    border-color: #3276b5;
+}
+
+.pesquisa-categoria-informatica{
+    border-color: #00a88f;
+}
+
+.pesquisa-categoria-publico{
+    border-color: #f37020;
+}
+
+.pesquisa-categoria-outros{
+    border-color: #6b439b;
+}
+
+
+
+
+
+
+
 
 .pesquisa-estabelecimento{
     color: #000;
@@ -261,6 +347,83 @@ body{
 
 
 
+/* PAGINA DE CADASTRO */
+.formulario-cadastro{
+    margin-top: 12%;
+    color: #777777;
+    font-size: 1.2em;
+
+}
+
+.categorias{
+    color: #00aeff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RODAPE */
+
+.area-rodape{
+    width: 100%;
+    background-color: #0ca7ef;
+}
+
+.info-rodape{
+    color: #fff;
+    margin-top: 2em;
+    padding-bottom: 13%;
+}
+
+.info-rodape a:link,
+.info-rodape a:active,
+.info-rodape a:hover,
+.info-rodape a:visited{
+    color: #fff;
+}
+
+.info-rodape li{
+    margin-left: 1em;
+}
+
+
+.rodape-titulo{
+    font-size: 1.5em;
+}
+
+
+.rodape-logo{
+    width: 100%;
+}
+
+
+.area-info-desenvolvedor{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.area-info-desenvolvedor img{
+    max-width: 40px;
+}
+
+
+
+
+
+
 
 
 
@@ -286,6 +449,18 @@ body{
 
 /* (max-width: 768px) */
 @media screen and (max-width: 991px){
+    .hidden-md{
+        display: block;
+    }
+
+    .hidden-lg{
+        display: none;
+    }
+
+    .hidden-sm{
+        display: none;
+    }
+
     body{
         font-size:12px;
     }
@@ -301,6 +476,12 @@ body{
         padding-bottom: 2em;
     }
 
+    .rodape-logo{
+        width: 100%;
+        max-width: 220px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
     .pesquisa > form > input[type=submit]{
 
     }
@@ -406,6 +587,25 @@ body{
 
 
 
+    /* RODAPE */
+
+    .info-rodape{
+        padding-bottom: 0;
+    }
+
+    /* (max-width: 768px) */
+    @media screen and (max-width: 768px){
+        .hidden-md{
+            display: none;
+        }
+
+        .hidden-lg{
+            display: block;
+        }
+
+
+    }
+
 
     @media screen and (max-width: 250px) {
         body{
@@ -415,6 +615,11 @@ body{
         .categoria{
             padding-left: 1em;
         }
+
+
+
+
+
     }
 
 }
