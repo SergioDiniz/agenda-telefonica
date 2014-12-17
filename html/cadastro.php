@@ -29,6 +29,7 @@ if(isset($_POST['termo'])){
                 $_POST['numero'] = -1;
             }
 
+
             $data = date('Y-m-d');
             $categoria = getCategoria($_POST['subcategoria']);
 

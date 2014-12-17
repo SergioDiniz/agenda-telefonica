@@ -14,12 +14,16 @@ if ( isset($_GET['pesquisa']) or isset($_GET['letra']) or isset($_GET['categoria
 
     $sqlPesquisa = "";
 
+
+
+
     if (isset($_GET['pesquisa'])) {
+        $getPesquisa = $_GET['pesquisa'];
         $sqlPesquisa = "select * from agenda where ativo = 1
-                    and (nomeResponsavel like '%{$_GET['pesquisa']}%'
-                    or nomeEstabelecimento like '%{$_GET['pesquisa']}%'
-                    or descricao like '%{$_GET['pesquisa']}%' or subcategoria
-                    like '%{$_GET['pesquisa']}%') order by prioridade asc, nomeEstabelecimento asc";
+                    and (nomeResponsavel like '%{$getPesquisa}%'
+                    or nomeEstabelecimento like '%{$getPesquisa}%'
+                    or descricao like '%{$getPesquisa}%' or subcategoria
+                    like '%{$getPesquisa}%') order by prioridade asc, nomeEstabelecimento asc";
     } elseif (isset ($_GET['letra'])) {
         $sqlPesquisa = "select * from agenda where ativo = 1
                     and (nomeEstabelecimento like '{$_GET['letra']}%')
@@ -48,11 +52,12 @@ if ( isset($_GET['pesquisa']) or isset($_GET['letra']) or isset($_GET['categoria
 
 
     if (isset($_GET['pesquisa'])) {
+        $getPesquisa = $_GET['pesquisa'];
         $sqlPesquisa = "select * from agenda where ativo = 1
-                    and (nomeResponsavel like '%{$_GET['pesquisa']}%'
-                    or nomeEstabelecimento like '%{$_GET['pesquisa']}%'
-                    or descricao like '%{$_GET['pesquisa']}%' or subcategoria
-                    like '%{$_GET['pesquisa']}%') order by prioridade asc, nomeEstabelecimento asc limit $inicio, $linhasPorPagina";
+                    and (nomeResponsavel like '%{$getPesquisa}%'
+                    or nomeEstabelecimento like '%{$getPesquisa}%'
+                    or descricao like '%{$getPesquisa}%' or subcategoria
+                    like '%{$getPesquisa}%') order by prioridade asc, nomeEstabelecimento asc limit $inicio, $linhasPorPagina";
     } elseif (isset ($_GET['letra'])) {
         $sqlPesquisa = "select * from agenda where ativo = 1
                     and (nomeEstabelecimento like '{$_GET['letra']}%')
@@ -80,7 +85,7 @@ if ( isset($_GET['pesquisa']) or isset($_GET['letra']) or isset($_GET['categoria
     }
 
     mysqli_close($mysqli);
-    
+
 } else{
     header('Location: index.php');
 }
@@ -90,4 +95,4 @@ if ( isset($_GET['pesquisa']) or isset($_GET['letra']) or isset($_GET['categoria
 
 
 
-include "resultadoPesquisa.php";
+include "pesquisaHTML.php";
